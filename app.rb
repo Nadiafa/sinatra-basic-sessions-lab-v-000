@@ -14,8 +14,6 @@ class App < Sinatra::Base
   post '/checkout' do 
     session[:item] = params[:item]
     @session = session
-    
-    redirect '/checkout/:item'
   end
   
   get '/checkout/:item'
