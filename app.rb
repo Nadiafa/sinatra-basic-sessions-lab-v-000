@@ -16,7 +16,7 @@ class App < Sinatra::Base
     @session = session
   end
   
-  # get '/checkout/:item'
-  #   erb :checkout
-  # end
+  get '/checkout'
+    erb :checkout
+  end
 end
